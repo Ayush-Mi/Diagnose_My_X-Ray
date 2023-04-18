@@ -2,7 +2,7 @@
 
 It is estimated that nearly 100 million x-rays are performed every year in just India - source ['Times of India'](http://timesofindia.indiatimes.com/articleshow/4262527.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst). With this rise in this number the analysis of these reports forms the bottleneck of the whole diagnostic process. In this porject I have tried to automate this analysis process to help  doctors in analysing these reports by highlighting the areas which has abnormility and classify them to the decease that they indicate along with the probability of that decease.
 
-This does not eliminate the requirement of a clinician but instead aid them by highlighting parts of interest in the report and reduce the time it take for analysis.
+>This does not eliminate the requirement of a clinician but instead aid them by highlighting parts of interest in the report and reduce the time it take for analysis.
 
 #### Demo
 
@@ -38,7 +38,25 @@ The table shows the best results while training which was seen in epoch 8 of 10.
 
 
 ## How to run this demo?
-The latest versions of
+The project uses python 3.8 and jupyter notebook for training the models.
+Install these libraries to replicate this work:
+
+`pip intsll pandas==1.4.4`
+
+`pip intsll numpy==1.23.2`
+
+`pip install tensorflow==2.9.2`
+
+`pip install tensorboard`
+
+`pip intall re==2.2.1`
+
+`pip install flask`
+
+- To train the model, download the dataset from [here] and place it in `./data/images/` folder and run the notebook train.ipynb.
+- To run the inference, use `python main.py` command from terminal while being in the project directory. I have not used arparse in my code so manually change the path to image file in the code.
+- To run the web application, run the app.py script.
+
 ## Room for improvement
 
 - The image data can be preprocessed to improve the quality of the image which in turn will help the model learn better.
