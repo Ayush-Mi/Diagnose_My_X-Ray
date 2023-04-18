@@ -89,3 +89,4 @@ Install these libraries to replicate this work:
 ## References
 - I ain't an expert in frontend so the CSS and HTML was taken from [BuffML](https://buffml.com/multi-class-image-classification-flask-app-complete-project/)
 - The dataset used was taken from [ChestX-ray8](https://arxiv.org/abs/1705.02315)
+- The background images in the web app was taken from [Unsplash](https://unsplash.com/s/photos/)
