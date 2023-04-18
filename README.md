@@ -59,6 +59,10 @@ The table shows the best results while training which was seen in epoch 8 of 10.
 | Val | 3.59 | 0.36 | 0.31 | 0.43 |
 | Test | 2.46 | 0.40 | 0.36 | 0.46 |
 
+| Pred 1 | Pred 2 | Pred 3 |
+|:---:|:---:|:---:|
+| ![](https://github.com/Ayush-Mi/Diagnose_My_X-Ray/blob/main/static/predictions/pred_00003923_00499.png) | ![](https://github.com/Ayush-Mi/Diagnose_My_X-Ray/blob/main/static/predictions/pred_00003923_00475.png) | ![](https://github.com/Ayush-Mi/Diagnose_My_X-Ray/blob/main/static/predictions/pred_00003923_00467.png) |  
+
 
 ## How to run this demo?
 The project uses python 3.8 and jupyter notebook for training the models.
