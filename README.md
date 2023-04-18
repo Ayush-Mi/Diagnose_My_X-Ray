@@ -53,7 +53,7 @@ Install these libraries to replicate this work:
 
 `pip install flask`
 
-- To train the model, download the dataset from [here] and place it in `./data/images/` folder and run the notebook train.ipynb.
+- To train the model, download the dataset from [here](https://nihcc.app.box.com/v/ChestXray-NIHCC) and place it in `./data/images/` folder and run the notebook train.ipynb.
 - To run the inference, use `python main.py` command from terminal while being in the project directory. I have not used arparse in my code so manually change the path to image file in the code.
 - To run the web application, run the app.py script.
 
