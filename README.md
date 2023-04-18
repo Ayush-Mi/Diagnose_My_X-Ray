@@ -22,12 +22,28 @@ The whole project is divided into three parts: training a model, visualizing the
 The last 15 layers of a Keras based ResNet50 model pretrained on Imagenet dataset was finetuned on the x-ray data. The model was trained on weighted loss function with Adam optimizer and F1-score as the evaluation metric for 10 epochs. It had 23.6 M parameters out of which 5.5 M were trainable parameters and each epoch took around 10 mins when trained on Macbook M1-pro 32gb.
 
 #### Dataset
+The image data used for training was a subset taken from the paper [ChestX-ray8](https://arxiv.org/abs/1705.02315) by Xiaosong Wang et.al. It had ~15k chest x-ray images of ~3.9k patients beloning to one or more of the 15 labels i.e. 'Atelectasis', 'Cardiomegaly', 'Consolidation', 'Edema','Effusion', 'Emphysema', 'Fibrosis', 'Hernia', 'Infiltration','Mass', 'No Finding', 'Nodule', 'Pleural_Thickening', 'Pneumonia','Pneumothorax'.
 
-#### Training
+However, the frequency of occurance of these classes in the whole dataset was really low and hence a weighted loss function was used while training the model.
 
-#### Result
+#### Results
+
+The table shows the best results while training which was seen in epoch 8 of 10. The model clearly overfits the data in training pipeline which can be seen by the high difference in the train and val metrics.
+
+| | Loss | F1 | Precision | Recall |
+|:---:|:---:|:---:|:---:|:---:|
+| Train | 0.26 | 0.67 | 0.52 | 0.94 |
+| Val | 3.59 | 0.36 | 0.31 | 0.43 |
+| Test | 2.46 | 0.40 | 0.36 | 0.46 |
+
 
 ## How to run this demo?
+The latest versions of
+## Room for improvement
+
+- The image data can be preprocessed to improve the quality of the image which in turn will help the model learn better.
+- The DICOM images are of high quality and hence are more suitable to get a better performing model.
+- The above aprroach used the resnet50 as the baseline but more recent architectures like transformers can capture patterns well.
 
 ## References
 - I ain't an expert in frontend so the CSS and HTML was taken from [BuffML](https://buffml.com/multi-class-image-classification-flask-app-complete-project/)
