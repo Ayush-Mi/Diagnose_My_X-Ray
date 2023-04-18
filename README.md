@@ -24,7 +24,30 @@ The last 15 layers of a Keras based ResNet50 model pretrained on Imagenet datase
 #### Dataset
 The image data used for training was a subset taken from the paper [ChestX-ray8](https://arxiv.org/abs/1705.02315) by Xiaosong Wang et.al. It had ~15k chest x-ray images of ~3.9k patients beloning to one or more of the 15 labels i.e. 'Atelectasis', 'Cardiomegaly', 'Consolidation', 'Edema','Effusion', 'Emphysema', 'Fibrosis', 'Hernia', 'Infiltration','Mass', 'No Finding', 'Nodule', 'Pleural_Thickening', 'Pneumonia','Pneumothorax'.
 
+| Image 1 | Image 3 | Image 3 | Image 4 |
+|:---:|:---:|:---:|:---:|
+| ![](https://github.com/Ayush-Mi/Diagnose_My_X-Ray/blob/main/static/for_readme/p1.png) | ![](https://github.com/Ayush-Mi/Diagnose_My_X-Ray/blob/main/static/for_readme/p2.png) | ![](https://github.com/Ayush-Mi/Diagnose_My_X-Ray/blob/main/static/for_readme/p3.png) | ![](https://github.com/Ayush-Mi/Diagnose_My_X-Ray/blob/main/static/for_readme/p4.png) 
+
+
 However, the frequency of occurance of these classes in the whole dataset was really low and hence a weighted loss function was used while training the model.
+
+| | Frequency of Occurance in whole dataset |
+|:---:|:---:|
+| Atelectasis | 0.087
+| Cardiomegaly | 0.012
+| Consolidation | 0.038
+| Edema | 0.012
+| Effusion | 0.083
+| Emphysema | 0.02
+| Fibrosis | 0.025
+| Hernia | 0.002
+| Infiltration | 0.15
+| Mass | 0.03
+| No Finding | 0.6
+| Nodule | 0.042
+| Pleural_Thickening | 0.033
+| Pneumonia | 0.012
+| Pneumothorax | 0.044
 
 #### Results
 
